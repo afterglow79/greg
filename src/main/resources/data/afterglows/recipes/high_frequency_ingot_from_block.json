@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "afterglows:high_frequency_block"
+    }
+  ],
+  "result": {
+    "item": "afterglows:high_frequency_ingot",
+    "count": 9
+  }
+}

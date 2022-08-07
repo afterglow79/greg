@@ -1,0 +1,17 @@
+{
+  "item.afterglows.high_frequency_ingot": "High Frequency Ingot",
+  "item.afterglows.high_frequency_nugget": "High Frequency Nugget",
+  "item.afterglows.raw_high_frequency": "Raw High Frequency Steel",
+
+  "item.afterglows.high_frequency_blade": "High Frequency Blade",
+  "item.afterglows.high_frequency_pickaxe": "High Frequency Pickaxe",
+  "item.afterglows.high_frequency_shovel": "High Frequency Shovel",
+  "item.afterglows.high_frequency_axe": "High Frequency Axe",
+  "item.afterglows.high_frequency_hoe": "High Frequency Hoe",
+
+
+  "block.afterglows.high_frequency_block": "High Frequency Block",
+  "block.afterglows.high_frequency_ore": "High Frequency Ore",
+
+  "itemGroup.afterglows.redd-room": "Afterglow's Mod"
+}
