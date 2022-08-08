@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+        "item": "afterglows:raw_high_frequency"
+    },
+    "result": "afterglows:high_frequency_ingot",
+    "experience": 0.1,
+    "cookingtime": 20
+}

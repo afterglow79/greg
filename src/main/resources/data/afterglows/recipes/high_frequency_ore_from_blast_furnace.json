@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": {
+        "item": "afterglows:high_frequency_ore"
+    },
+    "result": "afterglows:raw_high_frequency",
+    "experience": 0.1,
+    "cookingtime": 20
+}

@@ -10,7 +10,7 @@ import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial {
 
-    HIGH_FREQUENCY_INGOT(MiningLevels.DIAMOND, 6500, 15.0f, 10, 32, () -> Ingredient.ofItems(ModItems.HIGH_FREQUENCY_INGOT));
+    HIGH_FREQUENCY(MiningLevels.NETHERITE, 6500, 12.0f, 10, 32, () -> Ingredient.ofItems(ModItems.HIGH_FREQUENCY_INGOT));
 
     private final int miningLevel;
     private final int itemDurability;
@@ -57,4 +57,5 @@ public enum ModToolMaterials implements ToolMaterial {
     public Ingredient getRepairIngredient() {
         return null;
     }
+}
 

@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "aaa",
+        "a a",
+        "a a"
+    ],
+    "key": {
+        "a": {
+            "item": "afterglows:high_frequency_ingot"
+        }
+    },
+    "result": {
+        "item": "afterglows:high_frequency_leggings",
+        "count": 1
+    }
+}
