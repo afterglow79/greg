@@ -9,7 +9,7 @@ import java.util.List;
 public class ModConfiguredFeatures {
     public static final List<OreFeatureConfig.Target> OVERWORLD_HIGH_FREQUENCY_ORES = List.of(
             OreFeatureConfig.createTarget(OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
-                    ModBlocks.HIGH_FREQUENCY_ORE.getDefaultState());
+                    ModBlocks.HIGH_FREQUENCY_ORE.getDefaultState()));
 
 
     public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> HIGH_FREQUENCY_ORE =

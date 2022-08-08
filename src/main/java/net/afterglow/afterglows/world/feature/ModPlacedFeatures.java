@@ -9,5 +9,5 @@ import net.minecraft.world.gen.placementmodifier.HeightRangePlacementModifier;
 public class ModPlacedFeatures {
     public static final RegistryEntry<PlacedFeature> HIGH_FREQUENCY_ORE_PLACED = PlacedFeatures.register("mythril_ore_placed",
             ModConfiguredFeatures.HIGH_FREQUENCY_ORE, ModOreFeatures.modifiersWithCount(7,
-                    HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(-80), YOffset.aboveBottom(319))));
+                    HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(-64), YOffset.aboveBottom(128))));
 }
