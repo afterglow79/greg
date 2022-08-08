@@ -1,6 +1,8 @@
 package net.afterglow.afterglows.item;
 
+import com.eliotlash.mclib.math.functions.classic.Mod;
 import net.afterglow.afterglows.AfterglowsMod;
+import net.afterglow.afterglows.entity.custom.ModEntities;
 import net.afterglow.afterglows.item.custom.ModAxeItem;
 import net.afterglow.afterglows.item.custom.ModHoeItem;
 import net.afterglow.afterglows.item.custom.ModPickaxeItem;
@@ -46,6 +48,9 @@ public class ModItems {
     public static final Item HIGH_FREQUENCY_BOOTS = registerItem("high_frequency_boots",
             new ArmorItem(ModArmorMaterials.HIGH_FREQUENCY, EquipmentSlot.FEET, new FabricItemSettings().group(ModItemGroup.RR)));
 
+    public static final Item RAY_SPAWN_EGG = registerItem("ray_spawn_egg",
+            new SpawnEggItem(ModEntities.RAY, 0x65728a, 0xC4A643,
+                   new FabricItemSettings().group(ModItemGroup.RR).maxCount(1)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(AfterglowsMod.MOD_ID, name), item);
