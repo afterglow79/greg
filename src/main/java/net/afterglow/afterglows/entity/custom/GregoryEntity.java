@@ -23,9 +23,9 @@ import software.bernie.geckolib3.core.event.predicate.AnimationEvent;
 import software.bernie.geckolib3.core.manager.AnimationData;
 import software.bernie.geckolib3.core.manager.AnimationFactory;
 
-public class RayEntity extends AnimalEntity implements IAnimatable {
+public class GregoryEntity extends AnimalEntity implements IAnimatable {
     private AnimationFactory factory = new AnimationFactory(this);
-    protected RayEntity(EntityType<? extends AnimalEntity> entityType, World world) {
+    protected GregoryEntity(EntityType<? extends AnimalEntity> entityType, World world) {
         super(entityType, world);
     }
 
@@ -44,20 +44,20 @@ public class RayEntity extends AnimalEntity implements IAnimatable {
     }
 
     protected void initGoals() {
-        this.goalSelector.add(0, new SwimGoal(this));
-        this.goalSelector.add(2, new WanderAroundPointOfInterestGoal(this, 0.75f, false));
-        this.goalSelector.add(3, new WanderAroundFarGoal(this, 0.75f, 1));
-        this.goalSelector.add(4, new LookAroundGoal(this));
-        this.goalSelector.add(5, new LookAtEntityGoal(this, PlayerEntity.class, 60.0f));
+        this.goalSelector.add(2, new SwimGoal(this));
+        this.goalSelector.add(3, new WanderAroundPointOfInterestGoal(this, 0.75f, false));
+        this.goalSelector.add(4, new WanderAroundFarGoal(this, 0.75f, 1));
+        this.goalSelector.add(5, new LookAroundGoal(this));
+        this.goalSelector.add(6, new LookAtEntityGoal(this, PlayerEntity.class, 60.0f));
     }
 
     private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event) {
         if (event.isMoving()) {
-            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.mg_ray.walk", true));
+            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.gregory.walk", true));
             return PlayState.CONTINUE;
         }
 
-        event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.mg_ray.idle", true));
+        event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.gregory.idle", true));
         return PlayState.CONTINUE;
     }
 

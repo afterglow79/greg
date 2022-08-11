@@ -8,13 +8,11 @@ import net.minecraft.entity.SpawnGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-import javax.swing.text.html.parser.Entity;
-
 public class ModEntities {
-    public static final EntityType<RayEntity> RAY = Registry.register(
-            Registry.ENTITY_TYPE, new Identifier(AfterglowsMod.MOD_ID, "ray"),
-            FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, RayEntity::new)
-                    .dimensions(EntityDimensions.fixed(6f, 9f)).build());
+    public static final EntityType<GregoryEntity> GREG = Registry.register(
+            Registry.ENTITY_TYPE, new Identifier(AfterglowsMod.MOD_ID, "gregory"),
+            FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, GregoryEntity::new)
+                    .dimensions(EntityDimensions.fixed(1f, 1f)).build());
 
 
 }

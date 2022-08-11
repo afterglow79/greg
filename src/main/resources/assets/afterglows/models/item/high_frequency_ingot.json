@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "afterglows:item/high_frequency_ingot"
-  }
-}
